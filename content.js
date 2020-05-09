@@ -30,6 +30,8 @@ function appendUsdPrice(){
   var node = document.createElement("p");
   node.style.fontSize = "16px";
   node.style.color = "#65696b";
+  var titleText = "Conversion rate set at 1AUD = " + conversionRate + "USD";
+  node.setAttribute("title", titleText);
   var textnode = document.createTextNode("$" + priceTrueNum*conversionRate + " USD");
   node.appendChild(textnode);
   priceContainer.appendChild(node);
