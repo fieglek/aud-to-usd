@@ -1,0 +1,13 @@
+{
+  "name":"AUD to USD",
+  "version":"1.1",
+  "manifest_version":2,
+  "description":"Show prices on realestate.com.au with equivalent USD",
+  "permissions": ["declarativeContent","activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.realestate.com.au/property-*"],
+      "js": ["content.js"]
+    }
+  ]
+}
